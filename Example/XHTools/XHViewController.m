@@ -7,6 +7,7 @@
 //
 
 #import "XHViewController.h"
+#import <XHTools/XHTimerExtension.h>
 
 @interface XHViewController ()
 
@@ -17,7 +18,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    NSString *test = [XHTimerExtension executeStart:-1 interval:2.0 repeats:NO async:NO task:^{
+        NSLog(@"执行111,, %@",[NSThread currentThread]);
+    }];
+    [XHTimerExtension cancelTask:@"ssss"];
+    
+    [XHTimerExtension executeStart:2.0 interval:2.0 repeats:YES async:NO task:^{
+        NSLog(@"执行222,, %@",[NSThread currentThread]);
+    }];
+    [XHTimerExtension executeStart:2.0 interval:2.0 repeats:YES async:NO task:^{
+        NSLog(@"执行333,, %@",[NSThread currentThread]);
+    }];
+    [XHTimerExtension executeStart:2.0 interval:2.0 repeats:YES async:NO task:^{
+        NSLog(@"执行444,, %@",[NSThread currentThread]);
+    }];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
