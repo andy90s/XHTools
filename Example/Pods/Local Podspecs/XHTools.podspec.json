@@ -1,0 +1,28 @@
+{
+  "name": "XHTools",
+  "version": "0.1.0",
+  "summary": "工具类",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/andy90s/XHTools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "andy90s": "909901234@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/andy90s/XHTools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "XHTools/Classes/**/*",
+  "subspecs": [
+    {
+      "name": "TimerExtension",
+      "source_files": "XHTools/Classes/TimerExtension/*"
+    }
+  ]
+}

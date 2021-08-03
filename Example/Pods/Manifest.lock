@@ -1,0 +1,29 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - XHTools (0.1.0):
+    - XHTools/TimerExtension (= 0.1.0)
+  - XHTools/TimerExtension (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - XHTools (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  XHTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  XHTools: 01cd35796bd008288d0da726afa5cf438573ab20
+
+PODFILE CHECKSUM: a0a9d7ac4f1feebabbb1988a06a6acf1d00717d2
+
+COCOAPODS: 1.10.1
